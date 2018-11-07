@@ -71,7 +71,7 @@ public class AutoActivity extends BaseActivity implements View.OnClickListener, 
         setStyleForPartner(isPartner);
         setupToolBar();
 
-
+/// это гис - пока мозгов не хватает
         FrameLayout autoWebView = findViewById(R.id.auto_webview);
         try {
             autoWebView.addView(new WebView2Gis(this));

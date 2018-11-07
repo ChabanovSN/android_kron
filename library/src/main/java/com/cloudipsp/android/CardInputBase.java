@@ -5,6 +5,7 @@ import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.widget.TextView;
 
 /**
  * Created by vberegovoy on 6/20/17.
@@ -37,7 +38,7 @@ class CardInputBase extends AppCompatEditText {
     }
 
     protected void setTextInternal(CharSequence text) {
-        super.setText(text, BufferType.NORMAL);
+        super.setText(text, TextView.BufferType.NORMAL);
     }
 
     @Override

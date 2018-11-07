@@ -25,6 +25,7 @@ import android.widget.TextView;
 import com.mercury.kron.R;
 
 
+import com.mercury.kron.map.GoogleMapActivity;
 import com.mercury.kron.ui.activity.tamplets.LoginPartnerActivity;
 import com.mercury.kron.utils.RoundedBitmap;
 
@@ -116,8 +117,10 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                 startActivity(intent);
                 break;
             case R.id.drawer_auto:
-                intent = new Intent(this,AutoActivity.class);
-                intent.putExtra("boolean",isPartner);
+                // AutoActivity уход в гис2
+//                intent = new Intent(this,AutoActivity.class);
+//                intent.putExtra("boolean",isPartner);
+                intent = new Intent(MainActivity.this,GoogleMapActivity.class);
                 startActivity(intent);
                 break;
             case R.id.ship:

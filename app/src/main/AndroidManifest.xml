@@ -28,6 +28,15 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <!-- Ключ связан с аккаунтом Чабанова С.Н. -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCt7ybHfXk49vSzTEnsAyd9gZlx8EyHQ4s"/>
+        <!-- что бы запустилась гугл карта - какая то муть с обращением по адресу http.. -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <!--контроль версии-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
         <activity
             android:name=".ui.activity.MainActivity"
             android:noHistory="true">
@@ -69,6 +78,7 @@
             android:name=".ui.activity.tamplets.LoginPartnerActivity"
             android:label="@string/title_activity_login_partner" />
         <activity android:name=".ui.activity.showInstruction.MainShowInstructionActivity"></activity>
+        <activity android:name=".map.GoogleMapActivity"/>
     </application>
 
 </manifest>
